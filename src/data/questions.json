@@ -1,0 +1,204 @@
+{
+  "perguntas": [
+    {
+      "id": 1,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Energético", "valor": "D" },
+        { "texto": "Sociável", "valor": "I" },
+        { "texto": "Atencioso", "valor": "S" },
+        { "texto": "Organizado", "valor": "C" }
+      ]
+    },
+    {
+      "id": 2,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Competitivo", "valor": "D" },
+        { "texto": "Convincente", "valor": "I" },
+        { "texto": "Submisso", "valor": "S" },
+        { "texto": "Metódico", "valor": "C" }
+      ]
+    },
+    {
+      "id": 3,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Habilidoso", "valor": "D" },
+        { "texto": "Estimulante", "valor": "I" },
+        { "texto": "Respeitador", "valor": "S" },
+        { "texto": "Reservado", "valor": "C" }
+      ]
+    },
+    {
+      "id": 4,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Proativo", "valor": "D" },
+        { "texto": "Espirituoso", "valor": "I" },
+        { "texto": "Sensível", "valor": "S" },
+        { "texto": "Autónomo", "valor": "C" }
+      ]
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Determinado", "valor": "D" },
+        { "texto": "Cativante", "valor": "I" },
+        { "texto": "Paciente", "valor": "S" },
+        { "texto": "Planeador", "valor": "C" }
+      ]
+    },
+    {
+      "id": 6,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Determinado", "valor": "D" },
+        { "texto": "Sociável", "valor": "I" },
+        { "texto": "Cuidadoso", "valor": "S" },
+        { "texto": "Prático", "valor": "C" }
+      ]
+    },
+    {
+      "id": 7,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Persistente", "valor": "D" },
+        { "texto": "Comunicativo", "valor": "I" },
+        { "texto": "Empático", "valor": "S" },
+        { "texto": "Organizado", "valor": "C" }
+      ]
+    },
+    {
+      "id": 8,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Ambicioso", "valor": "D" },
+        { "texto": "Espontâneo", "valor": "I" },
+        { "texto": "Cordial", "valor": "S" },
+        { "texto": "Estruturado", "valor": "C" }
+      ]
+    },
+    {
+      "id": 9,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Visionário", "valor": "D" },
+        { "texto": "Inspirador", "valor": "I" },
+        { "texto": "Diplomático", "valor": "S" },
+        { "texto": "Prestável", "valor": "C" }
+      ]
+    },
+    {
+      "id": 10,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Seguro", "valor": "D" },
+        { "texto": "Inspirador", "valor": "I" },
+        { "texto": "Cuidadoso", "valor": "S" },
+        { "texto": "Crítico", "valor": "C" }
+      ]
+    },
+    {
+      "id": 11,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Líder", "valor": "D" },
+        { "texto": "Entusiasta", "valor": "I" },
+        { "texto": "Colaborativo", "valor": "S" },
+        { "texto": "Analítico", "valor": "C" }
+      ]
+    },
+    {
+      "id": 12,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Ousado", "valor": "D" },
+        { "texto": "Persuasivo", "valor": "I" },
+        { "texto": "Disponível", "valor": "S" },
+        { "texto": "Metódico", "valor": "C" }
+      ]
+    },
+    {
+      "id": 13,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Assertivo", "valor": "D" },
+        { "texto": "Carismático", "valor": "I" },
+        { "texto": "Amável", "valor": "S" },
+        { "texto": "Rigoroso", "valor": "C" }
+      ]
+    },
+    {
+      "id": 14,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Seguro", "valor": "D" },
+        { "texto": "Influenciador", "valor": "I" },
+        { "texto": "Tolerante", "valor": "S" },
+        { "texto": "Observador", "valor": "C" }
+      ]
+    },
+    {
+      "id": 15,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Ambicioso", "valor": "D" },
+        { "texto": "Carismático", "valor": "I" },
+        { "texto": "Dedicado", "valor": "S" },
+        { "texto": "Realista", "valor": "C" }
+      ]
+    },
+    {
+      "id": 16,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Empreendedor", "valor": "D" },
+        { "texto": "Espontâneo", "valor": "I" },
+        { "texto": "Cuidadoso", "valor": "S" },
+        { "texto": "Flexível", "valor": "C" }
+      ]
+    },
+    {
+      "id": 17,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Determinado", "valor": "D" },
+        { "texto": "Sociável", "valor": "I" },
+        { "texto": "Prestável", "valor": "S" },
+        { "texto": "Analítico", "valor": "C" }
+      ]
+    },
+    {
+      "id": 18,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Confiante", "valor": "D" },
+        { "texto": "Inspirador", "valor": "I" },
+        { "texto": "Tolerante", "valor": "S" },
+        { "texto": "Estruturado", "valor": "C" }
+      ]
+    },
+    {
+      "id": 19,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Proativo", "valor": "D" },
+        { "texto": "Comunicativo", "valor": "I" },
+        { "texto": "Sereno", "valor": "S" },
+        { "texto": "Cauteloso", "valor": "C" }
+      ]
+    },
+    {
+      "id": 20,
+      "pergunta": "Qual destes adjetivos mais te descreve?",
+      "respostas": [
+        { "texto": "Ousado", "valor": "D" },
+        { "texto": "Criativo", "valor": "I" },
+        { "texto": "Atento", "valor": "S" },
+        { "texto": "Realista", "valor": "C" }
+      ]
+    }
+  ]
+}
