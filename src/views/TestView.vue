@@ -5,21 +5,27 @@
         <img src="/barra-disc.png" alt="Ilustração Perfil Comportamental" class="illustration-image"/>
       </div>
 
-      <div class="main-content">
-        <h1 class="main-title">Selecione o adjetivo que melhor descreve você!</h1>
+      <div class="main-content" v-if="currentQuestion">
+        <h1 class="main-title">{{ currentQuestion.pergunta }}</h1>
         <p class="subtitle">(Mesmo que você se identifique com mais de um, escolha o que mais se encaixa)</p>
 
         <div class="answer-buttons">
-          <button class="answer-button">SOCIÁVEL</button>
-          <button class="answer-button">ENERGÉTICO</button>
-          <button class="answer-button">ATENCIOSO</button>
-          <button class="answer-button">CONTROLADO</button>
+          <button 
+            v-for="resposta in currentQuestion.respostas" 
+            :key="resposta.texto" 
+            @click="selectAnswer(resposta)"
+            class="answer-button">
+            {{ resposta.texto }}
+          </button>
         </div>
+      </div>
+      <div v-else>
+        <h1 class="main-title">Questionário Concluído!</h1>
       </div>
 
       <div class="progress-section">
         <div class="progress-bar">
-          <div class="progress-fill" style="width: 25%;"></div>
+          <div class="progress-fill" :style="{ width: progress + '%' }"></div>
         </div>
       </div>
     </div>
@@ -27,30 +33,40 @@
 </template>
 
 <script>
-import axios from 'axios';
+import questionsData from '@/data/questions.json';
 
 export default {
   name: 'TestView',
   data() {
     return {
-      answers: {
-        // As respostas do usuário seriam coletadas aqui
-      },
-      message: ''
+      questions: questionsData.perguntas,
+      currentQuestionIndex: 0,
+      userAnswers: [],
     };
   },
+  computed: {
+    currentQuestion() {
+      return this.questions[this.currentQuestionIndex];
+    },
+    progress() {
+      return (this.currentQuestionIndex / this.questions.length) * 100;
+    }
+  },
   methods: {
-    async submitTest() {
-      this.message = 'Enviando...';
-      try {
-        // ATENÇÃO: Substitua 'http://your-backend-api-url/api/submit-test'
-        // pelo URL real do seu endpoint de backend.
-        const response = await axios.post('http://your-backend-api-url/api/submit-test', this.answers);
-        this.message = 'Teste enviado com sucesso!';
-        console.log('Resposta do servidor:', response.data);
-      } catch (error) {
-        this.message = 'Ocorreu um erro ao enviar o teste.';
-        console.error('Erro ao enviar o teste:', error);
+    selectAnswer(resposta) {
+      this.userAnswers.push({
+        perguntaId: this.currentQuestion.id,
+        pergunta: this.currentQuestion.pergunta,
+        resposta: resposta.texto,
+        valor: resposta.valor,
+      });
+
+      if (this.currentQuestionIndex < this.questions.length - 1) {
+        this.currentQuestionIndex++;
+      } else {
+        // Lógica para quando o questionário for concluído
+        console.log('Respostas Finais:', this.userAnswers);
+        // Aqui você pode, por exemplo, redirecionar para uma página de resultados
       }
     }
   }
