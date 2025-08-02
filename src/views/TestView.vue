@@ -34,6 +34,7 @@
 
 <script>
 import questionsData from '@/data/questions.json';
+import discProfiles from '@/data/disc_perfis_com_utm.json';
 
 export default {
   name: 'TestView',
@@ -42,6 +43,7 @@ export default {
       questions: questionsData.perguntas,
       currentQuestionIndex: 0,
       userAnswers: [],
+      discProfiles: discProfiles,
     };
   },
   computed: {
@@ -64,9 +66,40 @@ export default {
       if (this.currentQuestionIndex < this.questions.length - 1) {
         this.currentQuestionIndex++;
       } else {
-        // Lógica para quando o questionário for concluído
-        console.log('Respostas Finais:', this.userAnswers);
-        // Aqui você pode, por exemplo, redirecionar para uma página de resultados
+        this.redirectToProfile();
+      }
+    },
+    calculateProfile() {
+      const scores = this.userAnswers.reduce((acc, answer) => {
+        acc[answer.valor] = (acc[answer.valor] || 0) + 1;
+        return acc;
+      }, {});
+
+      const sortedProfiles = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+
+      const primaryProfile = sortedProfiles[0] ? this.getProfileName(sortedProfiles[0][0]) : '';
+      const secondaryProfile = sortedProfiles[1] ? this.getProfileName(sortedProfiles[1][0]) : '';
+
+      return `${primaryProfile} e ${secondaryProfile}`;
+    },
+    getProfileName(char) {
+      switch (char) {
+        case 'D': return 'Dominância';
+        case 'I': return 'Influência';
+        case 'S': return 'Estabilidade';
+        case 'C': return 'Conformidade';
+        default: return '';
+      }
+    },
+    redirectToProfile() {
+      const userProfile = this.calculateProfile();
+      const profileData = this.discProfiles.find(p => p.perfil === userProfile);
+
+      if (profileData) {
+        window.location.href = profileData.url;
+      } else {
+        console.error('Perfil não encontrado:', userProfile);
+        alert('Por favor, tente novamente mais tarde.');
       }
     }
   }
