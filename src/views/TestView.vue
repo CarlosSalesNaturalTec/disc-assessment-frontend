@@ -112,26 +112,21 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #008080; /* Verde-azulado (Teal) */
   padding: 2rem;
 }
 
 .container {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem 3rem;
   max-width: 900px;
   width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 80vh; /* Altura mínima consistente */
+  min-height: 80vh;
 }
 
 .illustration-container {
   width: 100%;
-  background-color: #FFF5E9;
   border-radius: 10px;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -147,24 +142,24 @@ export default {
 }
 
 .main-content {
-  flex-grow: 1; /* Faz esta seção crescer */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center;
 }
 
 .main-title {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  color: #4a4a4a; /* Cinza escuro */
+  color: #FFFFFF; /* White text */
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 1rem;
-  color: #888; /* Cinza mais claro */
+  color: #FFD600; /* Yellow subtitle */
   margin-bottom: 2.5rem;
 }
 
@@ -173,41 +168,45 @@ export default {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 }
 
 .answer-button {
-  background-color: #ffffff;
-  border: 2px solid #008080; /* Borda verde-azulado */
-  color: #008080; /* Texto verde-azulado */
+  background-color: #FFD600; /* Vibrant yellow */
+  color: #000000; /* Black text */
+  border: none;
   border-radius: 8px;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .answer-button:hover {
-  background-color: #008080;
-  color: #ffffff;
+  background-color: #FFCC00; /* Slightly darker yellow on hover */
 }
 
 .progress-section {
-  width: 100%;
-  padding-top: 1rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 200px; /* Fixed width for the progress bar area */
+  z-index: 1000;
 }
 
 .progress-bar {
-  background-color: #e0e0e0; /* Fundo cinza claro */
+  background-color: #2a2a2a; /* Dark background for the bar */
   border-radius: 10px;
-  height: 10px;
+  height: 30px;
   width: 100%;
   overflow: hidden;
+  border: 1px solid #444; /* Optional: slight border for definition */
 }
 
 .progress-fill {
-  background-color: #007bff; /* Azul vibrante */
+  background: linear-gradient(90deg, #FFD600, #FFAB00); /* Yellow to orange gradient */
   height: 100%;
   border-radius: 10px;
   transition: width 0.5s ease-in-out;

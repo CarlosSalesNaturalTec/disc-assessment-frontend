@@ -16,6 +16,8 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #0a0a0a, #1a2a2a, #2a2a2a);
+  color: #FFFFFF;
 }
 
 #app {

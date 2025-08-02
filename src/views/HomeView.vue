@@ -38,14 +38,10 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #008080; /* Verde-azulado (Teal) */
   padding: 2rem;
 }
 
 .container {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem 3rem;
   max-width: 900px;
   width: 100%;
@@ -57,7 +53,6 @@ export default {
 
 .illustration-container {
   width: 100%;
-  background-color: #FFF5E9;
   border-radius: 10px;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -76,7 +71,7 @@ export default {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #FFFFFF;
   margin-bottom: 2rem;
 }
 
@@ -97,13 +92,13 @@ export default {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #FFD600;
   margin-bottom: 1rem;
 }
 
 .tips-list {
   font-family: 'Helvetica Neue', sans-serif;
-  color: #555;
+  color: #FFFFFF;
   padding-left: 20px;
   line-height: 1.6;
 }
@@ -119,13 +114,13 @@ export default {
 .action-text {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
-  color: #333;
+  color: #FFFFFF;
   margin-bottom: 1rem;
 }
 
 .start-button {
-  background-color: #007bff; /* Azul */
-  color: #ffffff;
+  background-color: #FFD600;
+  color: #000000;
   border: none;
   border-radius: 8px;
   padding: 1rem 2rem;
@@ -138,6 +133,6 @@ export default {
 }
 
 .start-button:hover {
-  background-color: #0056b3; /* Azul mais escuro */
+  background-color: #FFCC00;
 }
 </style>
